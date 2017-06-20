@@ -1,0 +1,11 @@
+---
+- name: creating a vpc
+  hosts: centos1
+  tasks:
+    - name: creating vpc
+      ec2_vpc:
+        region: ap-northeast-1
+        state: present
+        cidr_block: 20.0.0.0/16
+        resource_tags: { "Name":"Test" }
+      register: vpc
