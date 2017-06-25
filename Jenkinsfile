@@ -100,4 +100,3 @@ stage("Determine Calling State") {
                 echo "INFO: This is a merge from Head branch [${headBranch}] into Base branch [${baseBranch}]"
             }
         }
-...
